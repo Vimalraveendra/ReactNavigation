@@ -1,14 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-const NotificationScreen = ({navigation}) => {
+const ProfileScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Notifications</Text>
-      <Button
-        title="Go to Profile "
-        onPress={() => navigation.navigate('Profile')}
-      />
+      <Text style={styles.text}>Profile</Text>
     </View>
   );
 };
@@ -24,4 +20,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NotificationScreen;
+export default ProfileScreen;
