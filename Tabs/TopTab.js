@@ -9,7 +9,11 @@ const MaterialTopTab = createMaterialTopTabNavigator();
 const TopTab = () => {
   return (
     <MaterialTopTab.Navigator>
-      <MaterialTopTab.Screen name="Tab1" component={Tab1} />
+      <MaterialTopTab.Screen
+        name="Tab1"
+        component={Tab1}
+        options={{title: 'Hello'}}
+      />
       <MaterialTopTab.Screen name="Tab2" component={Tab2} />
       <MaterialTopTab.Screen name="Tab3" component={Tab3} />
     </MaterialTopTab.Navigator>
