@@ -1,13 +1,17 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-const ProfileScreen = ({navigation}) => {
+const DetailsScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Profile</Text>
+      <Text style={styles.text}>Details</Text>
       <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
+        title="Go to BottomTab"
+        onPress={() => navigation.navigate('BottomTab')}
+      />
+      <Button
+        title="Go to TopTab"
+        onPress={() => navigation.navigate('TopTab')}
       />
     </View>
   );
@@ -24,4 +28,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProfileScreen;
+export default DetailsScreen;
