@@ -8,14 +8,23 @@ import DetailsScreen from './Details';
 import BottomTab from '../Tabs/BottomTab';
 import TopTab from '../Tabs/TopTab';
 
-
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const Stack = createStackNavigator();
 
 const MyStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen
+        name="HomeScreen"
+        component={HomeScreen}
+        options={{
+          headerTintColor: 'red',
+          handleLeft: () => (
+            <Icon.Button name="ios-menu" size={25} backgroundColor="#009387" />
+          ),
+        }}
+      />
       <Stack.Screen
         name="Notifications"
         component={NotificationScreen}

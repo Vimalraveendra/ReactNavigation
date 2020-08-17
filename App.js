@@ -23,7 +23,8 @@ const App = () => {
   };
   return (
     <AppearanceProvider>
-      <NavigationContainer theme={colorScheme === 'dark' ? DarkTheme : MyTheme}>
+      <NavigationContainer
+        theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <MyDrawer />
       </NavigationContainer>
     </AppearanceProvider>
