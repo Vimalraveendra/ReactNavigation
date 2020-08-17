@@ -1,14 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
-const ProfileScreen = ({navigation}) => {
+const ProfileDrawer = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Profile</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
-      />
     </View>
   );
 };
@@ -24,4 +20,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProfileScreen;
+export default ProfileDrawer;

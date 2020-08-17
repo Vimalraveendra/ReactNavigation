@@ -1,11 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
-const SetttingsScreen = ({navigation}) => {
+const Contact = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Setttings</Text>
-      <Button title="Go Back" onPress={() => navigation.goBack()} />
+      <Text style={styles.text}>Contact</Text>
     </View>
   );
 };
@@ -21,4 +20,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SetttingsScreen;
+export default Contact;
