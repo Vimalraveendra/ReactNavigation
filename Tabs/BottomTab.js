@@ -9,7 +9,13 @@ const MaterialBottomTab = createMaterialBottomTabNavigator();
 const BottomTab = () => {
   return (
     <MaterialBottomTab.Navigator>
-      <MaterialBottomTab.Screen name="Tab1" children={Tab1} />
+      <MaterialBottomTab.Screen
+        name="Tab1"
+        children={Tab1}
+        options={{
+          title: 'Home',
+        }}
+      />
       <MaterialBottomTab.Screen name="Tab2" component={Tab2} />
       <MaterialBottomTab.Screen name="Tab3" component={Tab3} />
     </MaterialBottomTab.Navigator>
