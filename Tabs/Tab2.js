@@ -1,7 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import {useIsFocused} from '@react-navigation/native';
 
 const Tab2 = () => {
+  const isFocused = useIsFocused();
+  console.log('is', isFocused);
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Tab2</Text>
