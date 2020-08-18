@@ -9,10 +9,11 @@ import BottomTab from '../Tabs/BottomTab';
 import TopTab from '../Tabs/TopTab';
 
 import Icon from 'react-native-vector-icons/Ionicons';
+import {DrawerActions} from '@react-navigation/native';
 
 const Stack = createStackNavigator();
 
-const MyStack = () => {
+const MyStack = ({navigation}) => {
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -20,8 +21,16 @@ const MyStack = () => {
         component={HomeScreen}
         options={{
           headerTintColor: 'red',
-          handleLeft: () => (
-            <Icon.Button name="ios-menu" size={25} backgroundColor="#009387" />
+          headerLeft: () => (
+            <Icon.Button
+              name="ios-menu"
+              size={25}
+              backgroundColor="#fff"
+              color="red"
+              onPress={() => {
+                navigation.dispatch(DrawerActions.openDrawer());
+              }}
+            />
           ),
         }}
       />
