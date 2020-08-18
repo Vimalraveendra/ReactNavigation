@@ -10,7 +10,6 @@ target 'Navigation' do
 
 
 
-  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'NavigationTests' do
     inherit! :complete
