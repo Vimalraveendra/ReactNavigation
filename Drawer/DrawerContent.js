@@ -19,6 +19,7 @@ import {
 } from '@react-navigation/drawer';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
+import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const DrawerContent = (props) => {
   return (
@@ -37,16 +38,51 @@ const DrawerContent = (props) => {
               </View>
             </View>
             <View style={styles.followingContent}>
-              <View>
+              <View style={styles.section}>
                 <Paragraph>80</Paragraph>
                 <Caption>Following</Caption>
               </View>
-              <View>
+              <View style={styles.section}>
                 <Paragraph>100</Paragraph>
                 <Caption>Followers</Caption>
               </View>
             </View>
           </View>
+          <Drawer.Section style={styles.drawerSection}>
+            <DrawerItem
+              icon={({color, size}) => {
+                <MaterialIcon name="home-outline" color={color} size={size} />;
+              }}
+              label="Home"
+              onPress={() => {}}
+            />
+
+            <DrawerItem
+              icon={({color, size}) => {
+                <MaterialIcon name="home-outline" color={color} size={size} />;
+              }}
+              label="Contact"
+              onPress={() => {}}
+            />
+            <DrawerItem
+              icon={({color, size}) => {
+                <MaterialIcon name="home-outline" color={color} size={size} />;
+              }}
+              label="Favorites"
+              onPress={() => {}}
+            />
+            <DrawerItem
+              icon={({color, size}) => {
+                <MaterialIcon
+                  name="settings-outline"
+                  color={color}
+                  size={size}
+                />;
+              }}
+              label="Settings"
+              onPress={() => {}}
+            />
+          </Drawer.Section>
         </View>
       </DrawerContentScrollView>
       <Drawer.Section style={styles.bottomDrawerSection}>
@@ -78,6 +114,10 @@ const styles = StyleSheet.create({
 
   followingContent: {
     flexDirection: 'row',
+  },
+  section: {
+    flexDirection: 'row',
+    marginLeft: 10,
   },
 });
 
