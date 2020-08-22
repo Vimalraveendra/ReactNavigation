@@ -18,8 +18,8 @@ import {
   DrawerItem,
 } from '@react-navigation/drawer';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
-import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+Icon.loadFont();
 
 const DrawerContent = (props) => {
   return (
@@ -51,7 +51,7 @@ const DrawerContent = (props) => {
           <Drawer.Section style={styles.drawerSection}>
             <DrawerItem
               icon={({color, size}) => {
-                <MaterialIcon name="home-outline" color={color} size={size} />;
+                <Icon name="home-outline" color={color} size={size} />;
               }}
               label="Home"
               onPress={() => {}}
@@ -59,25 +59,21 @@ const DrawerContent = (props) => {
 
             <DrawerItem
               icon={({color, size}) => {
-                <MaterialIcon name="home-outline" color={color} size={size} />;
+                <Icon name="home-outline" color={color} size={size} />;
               }}
               label="Contact"
               onPress={() => {}}
             />
             <DrawerItem
               icon={({color, size}) => {
-                <MaterialIcon name="home-outline" color={color} size={size} />;
+                <Icon name="home-outline" color={color} size={size} />;
               }}
               label="Favorites"
               onPress={() => {}}
             />
             <DrawerItem
               icon={({color, size}) => {
-                <MaterialIcon
-                  name="settings-outline"
-                  color={color}
-                  size={size}
-                />;
+                <Icon name="settings-outline" color={color} size={size} />;
               }}
               label="Settings"
               onPress={() => {}}

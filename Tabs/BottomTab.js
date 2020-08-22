@@ -7,6 +7,8 @@ import Tab3 from './Tab3';
 const MaterialBottomTab = createMaterialBottomTabNavigator();
 import Icon from 'react-native-vector-icons/Ionicons';
 
+Icon.loadFont();
+
 const BottomTab = () => {
   return (
     <MaterialBottomTab.Navigator>
