@@ -12,7 +12,7 @@ const TopTab = () => {
       <MaterialTopTab.Screen
         name="Tab1"
         component={Tab1}
-        options={{title: 'Hello'}}
+        options={{tabBarLabel: 'Hello'}}
       />
       <MaterialTopTab.Screen name="Tab2" component={Tab2} />
       <MaterialTopTab.Screen name="Tab3" component={Tab3} />
